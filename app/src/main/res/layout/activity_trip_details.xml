@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".TripDetailsActivity">
+
+        <LinearLayout style="@style/InfoBlock">
+
+            <TextView
+                android:id="@+id/about_trip_header"
+                style="@style/MenuTitle"
+                android:text="@string/trip_menu_title" />
+
+            <include layout="@layout/trip_short_info" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/InfoBlock">
+
+            <TextView
+                android:id="@+id/about_driver_header"
+                style="@style/MenuTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/driver_menu_title" />
+
+            <LinearLayout
+                android:id="@+id/about_driver_field"
+                style="@style/ListItem">
+
+                <TextView
+                    android:id="@+id/driver_name"
+                    style="@style/ListItemText"
+                    android:text="@string/diver_name" />
+
+                <TextView
+                    android:id="@+id/driver_name_header"
+                    style="@style/SecondaryText"
+                    android:text="@string/driver_name_secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/about_car_field"
+                style="@style/ListItem">
+
+                <TextView
+                    android:id="@+id/car_model"
+                    style="@style/ListItemText"
+                    android:text="@string/car_model" />
+
+                <TextView
+                    style="@style/SecondaryText"
+                    android:text="@string/car_model_secondary_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/about_vehicle_registration_plate_field"
+                style="@style/ListItem">
+
+                <TextView
+                    android:id="@+id/vehicle_registration_plate"
+                    style="@style/ListItemText"
+                    android:text="@string/vehicle_registration_plate" />
+
+                <TextView
+                    android:id="@+id/vehicle_registration_plate_header"
+                    style="@style/SecondaryText"
+                    android:text="@string/vehicle_registration_plate_secondary_text" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/car_photo" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

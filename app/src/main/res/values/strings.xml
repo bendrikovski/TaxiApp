@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TaxiApp</string>
+    <string name="from_marker">\uf21d</string>
+    <string name="to_marker">\uf11e</string>
+    <string name="trip_menu_title">Поездка</string>
+    <string name="driver_menu_title">Водитель</string>
+    <string name="diver_name">Barankin Mishail</string>
+    <string name="driver_name_secondary_text">Имя водителя</string>
+    <string name="car_model">Toyota Corolla</string>
+    <string name="car_model_secondary_text">Модель автомобиля</string>
+    <string name="vehicle_registration_plate_secondary_text">Регистрационный знак</string>
+    <string name="vehicle_registration_plate">x333рт198</string>
+    <string name="car_photo">Car photo</string>
+</resources>
